@@ -2,7 +2,7 @@
 	display:inline-block;
 	overflow:hidden;
 	background-repeat:no-repeat;
-	background-image:url(/images/index-icon.png?v=1)
+	background-image:url(../img/index-icon.png)
 }
 .hp-brand-title {
 	width:185px;

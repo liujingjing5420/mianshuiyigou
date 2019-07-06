@@ -354,7 +354,7 @@ img.saleout-icon {
 	display:inline-block;
 	overflow:hidden;
 	background-repeat:no-repeat;
-	background-image:url(../images/icons.png?v=20170518_2)
+	background-image:url(../img/icons.png)
 }
 .icon-bag {
 	width:30px;
@@ -1209,7 +1209,7 @@ a.o2o_store:hover {
 	display:inline-block;
 	overflow:hidden;
 	background-repeat:no-repeat;
-	background-image:url(../images/label.png)
+	background-image:url(../img/label.png)
 }
 .label_gift {
 	width:56px;
@@ -1239,7 +1239,7 @@ a.o2o_store:hover {
 	display:inline-block;
 	overflow:hidden;
 	background-repeat:no-repeat;
-	background-image:url(../images/kf_icons.png)
+	background-image:url(../img/kf_icons.png)
 }
 .icon-kf2 {
 	width:13px;
@@ -1358,7 +1358,7 @@ a.o2o_store:hover {
 	display:inline-block;
 	overflow:hidden;
 	background-repeat:no-repeat;
-	background-image:url(../images/right-bar-icons.png)
+	background-image:url(../img/right-bar-icons.png)
 }
 .icon-act-step1 {
 	width:240px;
@@ -1419,7 +1419,7 @@ a.o2o_store:hover {
 	left:0;
 	right:0;
 	bottom:0;
-	background:url("../images/alpha_b.png") repeat top
+	background:url("../img/alpha_bg.png") repeat top
 }
 .popup {
 	z-index:99999;
@@ -1955,7 +1955,7 @@ a.o2o_store:hover {
 	position:absolute;
 	top:50%;
 	margin-top:-31px;
-	background:url("../../images/icon-arrow.png") no-repeat !important;
+	background:url("../img/icon-arrow.png") no-repeat !important;
 	width:28px !important;
 	height:62px !important;
 	display:none;
@@ -2083,7 +2083,7 @@ img {
 	position:absolute;
 	top:50%;
 	margin-top:-31px;
-	background:url("../../images/icon-arrow.png") no-repeat;
+	background:url("../img/icon-arrow.png") no-repeat;
 	width:28px;
 	height:62px;
 	display:none;
