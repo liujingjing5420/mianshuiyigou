@@ -111,8 +111,8 @@
 			`);
 			$('.tuichu').on('click', function () {
 				$.cookie('username', '', { expires: -1 });
-				$('#user_welcome #txt_user_btns').html(`<a id="txt_user_login" href="javascript: hmpub.show_login();" title="登录">登录</a><span>|</span>
-				<a id="txt_user_register" href="javascript: hmpub.show_register();" title="注册 ">注册</a>
+				$('#user_welcome #txt_user_btns').html(`<a id="txt_user_login" href="login.html" title="登录">登录</a><span>|</span>
+				<a id="txt_user_register" href="registor.html" title="注册 ">注册</a>
 			`);
 			})
 		}

@@ -12,7 +12,7 @@
                     username: $username.val(),
                     password: $password.val()
                 }
-            }).then(function (data) {
+            }).done(function (data) {
                 if (data) {
                     $.cookie('username', $username.val(), { expires: 7 });
                     location.href = 'http://10.31.158.39:8088/javascript/mianshuiyigou/src/index111.html';

@@ -140,7 +140,7 @@
                 data: {
                     name: $username.val(),
                 }
-            }).then(function (data) {
+            }).done(function (data) {
                 if (data) {
                     alert('您输入的用户名已经存在');
                     username = false;

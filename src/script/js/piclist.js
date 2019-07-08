@@ -9,7 +9,7 @@
     $.ajax({
         url: "http://10.31.158.39:8088/javascript/mianshuiyigou/php/piclist.php",
         dataType: 'json',
-    }).then(function (data) {
+    }).done(function (data) {
         // console.log(data);
         const $goodsl = $('.ul-goodsl-list1');
         let htmlstr = '';
