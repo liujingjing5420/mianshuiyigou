@@ -28,7 +28,7 @@ Basic Swiper Styles
 	z-index:1;
 }
 .swiper-wrapper {
-	position:relative;
+	position:absolute;
 	width:100%;
 	-webkit-transition-property:-webkit-transform, left, top;
 	-webkit-transition-duration:0s;

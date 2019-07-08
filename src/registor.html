@@ -27,29 +27,55 @@
                             <div class="forms w-form w-form-reg">
                                 <h3><span>新会员注册</span></h3>
                                 <ul class="content">
-                                    <li class="txt"><input type="text" name="username" placeholder="请输入用户名"
-                                            value="" /><span class="user-icon"></span></li>
-                                    <li class="txt"><input type="password" name="password1" placeholder="请输入6~16位的密码"
-                                            value="" /><span class="lock-icon"></span></li>
-                                    <li class="txt"><input type="password" name="password2" placeholder="请再次输入密码"
-                                            value="" /><span class="lock-icon"></span></li>
-                                    <li class="txt"><input type="text" name="mobile_phone" placeholder="请输入可用于验证的手机号码"
-                                            value="" /><span class="phone-icon"></span></li>
-                                    <li class="sms" style="margin-bottom: 12px;"><input type="text" name="checkcode"
-                                            placeholder="请输入右边图片中的验证码" value="" /><img
-                                            src="https://publicapi.mianshui365.com/index.php?r=tools/imgcode&amp;_t=1562381106&amp;_m=15623811067948"
-                                            alt="验证码加载失败" width="86" height="33" style="" /></li>
-                                    <li class="txt veri clear-fix"><span class="left"><input type="text"
-                                                name="checkcode" placeholder="请输入短信验证码" value=""
-                                                class="verif" /></span><span class="float-right"><a
-                                                class="veri-code">发送验证码</a></span></li>
-                                    <li class="err-tip error" style="display:none;"><em class="err"></em> </li>
-                                    <li class="btn"><a title="注册" class="login-submit">注&nbsp;&nbsp;&nbsp;&nbsp;册</a>
+                                    <li class="txt">
+                                        <input class="username" type="text" name="username" placeholder="请输入用户名"
+                                            value="" />
+                                        <span class="user-icon"></span>
                                     </li>
-                                    <li class="go-rule"><input type="checkbox" checked="checked" />我已阅读并同意<a
-                                            href="https://www.mianshui365.com/cms_help_5.html"
-                                            target="_blank">《免税易购用户协议》</a></li>
-                                    <li class="go-reg"><span>已经是会员？<a href="/passport/login" class="">立刻登录</a></span>
+                                    <li class="txt">
+                                        <input class="pass" type="password" name="password1"
+                                            placeholder="请输入6~16位数字和字母组合的密码" value="" />
+                                        <span class="lock-icon lock-icon1"></span>
+                                    </li>
+                                    <li class="txt">
+                                        <input class="confirm" type="password" name="password2" placeholder="请再次输入密码"
+                                            value="" />
+                                        <span class="lock-icon lock-icon2"></span>
+                                    </li>
+                                    <!-- <li class="txt">
+                                        <input type="text" name="mobile_phone" placeholder="请输入可用于验证的手机号码" value="" />
+                                        <span class="phone-icon"></span>
+                                    </li> -->
+                                    <li class="sms" style="margin-bottom: 12px;">
+                                        <input class="smsinput" type="text" name="checkcode" placeholder="请输入右边图片中的验证码"
+                                            value="" />
+                                        <span></span>
+                                        <b class="sms-icon" style="width:10px;height:10px;"></b>
+                                    </li>
+                                    <!-- <li class="txt veri clear-fix">
+                                        <span class="left">
+                                            <input type="text" name="checkcode" placeholder="请输入短信验证码" value=""
+                                                class="verif" />
+                                        </span>
+                                        <span class="float-right">
+                                            <a class="veri-code">
+                                                发送验证码
+                                            </a>
+                                        </span>
+                                    </li> -->
+                                    <li class="err-tip error" style="display:none;">
+                                        <em class="err"></em>
+                                    </li>
+                                    <li class="btn">
+                                        <a title="注册" class="login-submit">注&nbsp;&nbsp;&nbsp;&nbsp;册</a>
+                                    </li>
+                                    <li class="go-rule">
+                                        <input type="checkbox" checked="checked" />我已阅读并同意
+                                        <a href="https://www.mianshui365.com/cms_help_5.html"
+                                            target="_blank">《免税易购用户协议》</a>
+                                    </li>
+                                    <li class="go-reg">
+                                        <span>已经是会员？<a href="login.html" class="">立刻登录</a></span>
                                     </li>
                                 </ul>
                             </div>
@@ -103,6 +129,8 @@
             </div>
         </div>
     </div>
+    <script src="script/thirdplugins/jquery.min.js"></script>
+    <script src="script/js/registor.js"></script>
 </body>
 
 </html>

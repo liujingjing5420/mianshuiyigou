@@ -7,7 +7,7 @@
     //     JSON
     // );
     $.ajax({
-        url: "http://localhost:8088/javascript/mianshuiyigou/php/piclist.php",
+        url: "http://10.31.158.39:8088/javascript/mianshuiyigou/php/piclist.php",
         dataType: 'json',
     }).then(function (data) {
         // console.log(data);
