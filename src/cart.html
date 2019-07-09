@@ -29,11 +29,6 @@
 
     <!-- section start -->
     <section class="section">
-        <div class="lctopp">
-            <!-- <div class="left01"></div> -->
-            <div class="left02" style="width:900px;"><img src="//snewww.mianshui365.com/images/cart/steps.jpg"
-                    height="54" width="900"></div>
-        </div>
         <div class="cart-alert-block">自然年内用户免税品累计限购30000元</div>
         <!--渠道活动tips-->
         <!--渠道活动tips END-->
@@ -67,58 +62,84 @@
                     <div class="sp1" style="display: inline-block">
                         <a
                             style="margin-left:5px;color: #fff;background: #fe0100;padding: 3px;border-radius: 2px;margin-right: 10px">每满减</a>
-                        <a class="orange"
+                        <!-- <a class="orange"
                             href="//s.mianshui365.com/list.html?activityId=AI2019070117013205200">已满足【每满1000减140】，已减140，再买
-                            <font color="#fe5c28">698</font>立减<font color="#fe5c28">140</font>&gt;</a>
+                            <font color="#fe5c28">698</font>立减<font color="#fe5c28">140</font>&gt;</a> -->
                     </div>
                     <div class="tral-tag right">
                         <div class="tral-tag-tit"></div>
-                        <div class="tral-tag-con">优惠金额:140</div>
+                        <div class="tral-tag-con"></div>
                     </div>
                     <span class="sp2"><strong>小计:¥1162&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></span>
                 </div>
                 <div class="cuxiao1">
+                    <table class="needed" style="display:none;height:110px">
+                        <tbody>
+                            <tr>
+                                <td class="td30">
+                                    <input class="checkone" type="checkbox" goods_id="44660" checked /></td>
+                                <td class="td343">
+                                    <dl>
+                                        <dd>
+                                            <img src="" alt="" style="width:105px;height:105px" />
+                                        </dd>
+                                        <dt style="cursor:pointer"
+                                            onclick="javascript:window.open('https://item.mianshui365.com/goods__c809280112706.html')">
+                                            <p class="color1"></p>
+                                            <p class="color2"></p>
+                                        </dt>
+                                    </dl>
+                                </td>
+                                <td class="td83">
+                                </td>
+                                <td class="td159" style="position: relative">
+                                    <p class="color11">免税价：<strong>&yen;</strong></p>
+                                    <div class="change-panel">
+                                        <div>
+                                            <input type="radio" style="vertical-align: top" name="activityId_44660"
+                                                goodsid="44660" activity_code="AI2019070117013205200" checked="" />
+                                            <div style="display: inline-block;width: 90%">
+                                                每满1000减140&gt;
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input type="radio" style="vertical-align: top" name="activityId_44660"
+                                                goodsid="44660" activity_code="-1" />
+                                            <div style="display: inline-block;width: 90%">
+                                                不使用优惠活动
+                                            </div>
+                                        </div>
+                                        <p style="text-align: center;padding: 10px;"><span class="cp_sub">确认</span><span
+                                                class="cp_close" style="background: #999999;margin-left: 50px">取消</span>
+                                        </p>
+                                    </div>
+                                    <div class="yzbottom-writebg"></div>
+                                </td>
+                                <td class="td138">
+                                    <p class="jiajia">
+                                        <a href="javascript:;" class="reduce " id="item-reduce-44660"
+                                            goods_id="44660">-</a>
+                                        <input class="val" count="" value="" id="item-change-44660" goods_id="44660"
+                                            goods_limit="" />
+                                        <a href="javascript:;" class="add" id="item-plus-44660" goods_id="44660">+</a>
+                                    </p>
+                                    <p> </p>
+                                </td>
+                                <td class="td169">
+                                    <p><a href="javascript:;" onclick="javascript:goodsCollect(44660,this);"
+                                            class="lajix">加入收藏</a>
+                                    </p>
+                                    <p><a href="javascript:;" class="sj">删除商品</a></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-
             </div>
-            <!--促销商品-->
-            <div class="cuxiao">
-            </div>
-            <script>
-                $(".change-activity").click(function () {
-                    $(this).siblings(".change-panel").show();
-                    $(this).siblings(".yzbottom-writebg").show();
-                });
-                $(".yzbottom-writebg").click(function () {
-                    $(this).hide();
-                    $(".yzbottom-writebg").siblings(".change-panel").hide();
-                });
-                $(".cp_close").click(function () {
-                    $(this).parents(".change-panel").hide();
-                    $(this).parents(".change-panel").siblings(".yzbottom-writebg").hide();
-                });
-                $(".cp_sub").click(function () {
-                    var goodsId = $(this).parents(".change-panel").find('input:radio:checked').attr("goodsid");
-                    var code = $(this).parents(".change-panel").find('input:radio:checked').attr("activity_code");
-                    $.ajax({
-                        url: '/?_c=cart&_a=ajaxSwitchActivity&skuid=' + goodsId + '&activity=' + code,
-                        async: true,
-                        success: function (re) {
-                            console.log(re);
-                            window.location.href = window.location.href
-                        },
-                        error: function () {
-                            hmpub.error_alert('出错啦!');
-                        }
-                    });
-                });
-            </script>
             <div id="bottomdiv-wrap" style="height: 60px;">
                 <div id="bottomdiv" style="position: absolute; bottom: 0px;">
                     <div class="yanzheng-error">
                         <i></i>
-
-
                         <div class="xiangouchaxun"><a data-target="#mypopup" data-toggle="popup"
                                 href="javascript:;">限购查询&gt;</a></div>
                     </div>
@@ -129,7 +150,6 @@
                                     checked="">全选
                             </div>
                             <div class="zonge">
-                                <p class="p3">总价¥1302 - 每满减¥140</p>
                                 <p class="p4"><em>购物车金额：</em><span>¥1162</span></p>
                             </div>
                         </div>
@@ -138,23 +158,10 @@
                     </div>
                 </div>
             </div>
-            <div id="cart-xiangou">
-                <div class="xiangou-block">
-                    <span class="xiangou-tit"><i></i>品类限购</span>
-                    <ul>
-                        <li>免税商品<br>使用额度<br>￥1302</li>
-                        <!--<li>￥1302</li>-->
-                        <li>化妆品<br>2/12</li>
-                    </ul>
-                </div>
-                <a href="#page-top">
-                    <div id="cart-btop"><i></i>TOP</div>
-                </a>
-            </div>
         </form>
     </section>
     <!-- section end -->
-    <script src="script/thirdplugins/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="script/thirdplugins/jquery.cookie.js"></script>
     <script src="script/js/cart.js"></script>
 

@@ -530,10 +530,9 @@ input[type="checkbox"]:checked {
 .xiangou-block ul{margin-bottom: 0; overflow: hidden; color: #666}
 .xiangou-block ul li{width: 100%; padding: 10px 0; text-align: center; border-top: 1px solid #ededed}
 .xiangou-block ul li.orange{color: #fc764d}
-/.xiangou-tit{display: block; padding: 16px 0; color: #fff; line-height: 14px; background-color: #fc764d}
-.xiangou-tit i{display: block;width: 23px; height: 29px; float: left; margin:0 4px 0 3px; background: url(../img/ic
-	on-lastest.png) -406px -447px no-repeat;}
-.xiangou-tit span{}
+.xiangou-tit{display: block; padding: 16px 0; color: #fff; line-height: 14px; background-color: #fc764d}
+.xiangou-tit i{display: block;width: 23px; height: 29px; float: left; margin:0 4px 0 3px;
+	 background: url(../img/icon-lastest.png) -406px -447px no-repeat;}
 .xiangouchaxun a{float: right; margin: 8px 8px 0 0; color: #fc764d }
 #cart-btop{width:53px; padding: 4px 0 3px 7px;margin-top: 10px; background-color: #f6f6f6; border: 1px solid #ededed;}
 #cart-btop i{
@@ -1144,3 +1143,9 @@ table td[class*="span"],table th[class*="span"]{
 .check_alert .alert_title span{position: absolute;right: 0;padding: 0 10px;cursor: pointer;font-size: 24px;top: 0}
 .check_alert .alert_content{line-height: 30px;font-size: 14px;}
 .check_alert .alert_bt span{display: block;width: 150px;height: 30px;line-height: 30px;text-align: center;background: #fc764d;color:#fff;margin:30px auto;font-size: 18px;cursor: pointer;}
+
+.empty{
+	text-align:center;
+	font-size:20px;
+	padding-top:15px;
+}
