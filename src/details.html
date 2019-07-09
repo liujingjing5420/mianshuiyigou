@@ -52,21 +52,22 @@
         </div>
         <div class="img-item">
             <div id="zoom-pic" class="large-box">
-                <img alt="馥蕾诗古源修护滋养保湿液"
-                    src="https://img.mianshui365.com/upload/20170702/18134040152.jpg@800h_800w_95q_1wh" width="400">
-                <span class="zoom-point" id="zoom-point" style="display: none; left: 200px; top: 0px;"></span>
-                <span class="zoom-box" id="zoom-box"
-                    style="background-image: url(&quot;https://img.mianshui365.com/upload/20170702/18134040152.jpg@800h_800w_95q_1wh&quot;); display: none; background-position: -400px 0px;"></span>
+                <img alt="" src="" width="400" class="smallpic">
+                <span class="zoom-point" id="zoom-point" style="display:none; left: 0px; top: 0px;"></span>
+                <span class="zoom-box" id="zoom-box" style=" display:none;position:absolute;overflow: hidden;">
+                    <img src="" alt="" class="bigpic">
+                </span>
             </div>
 
             <div class="mini-box" id="mini-box">
                 <a href="javascript:;" class="prev un-prev" style="display: none;"></a>
                 <div class="items-box">
                     <ul class="items">
-                        <li class="on"><a href="javascript:;"
+                        <li class="on">
+                            <a href="javascript:;"
                                 data-large="https://img.mianshui365.com/upload/20170702/18134040152.jpg@800h_800w_95q_1wh"
-                                data-mini="https://img.mianshui365.com/upload/20170702/18134040152.jpg@800h_800w_95q_1wh"><img
-                                    alt=""
+                                data-mini="https://img.mianshui365.com/upload/20170702/18134040152.jpg@800h_800w_95q_1wh">
+                                <img alt=""
                                     src="https://img.mianshui365.com/upload/20170702/18134040152.jpg@73h_73w_95q_1wh"></a>
                         </li>
                     </ul>
@@ -76,13 +77,13 @@
         </div>
 
         <div class="per-item">
-            <h3 class="title"><a class="orange" href="//s.mianshui365.com/brand/329.html">Fresh馥蕾诗</a>
-                <br>馥蕾诗古源修护滋养保湿液 </h3>
+            <h3 class="title"><a class="orange" href="//s.mianshui365.com/brand/329.html"></a>
+                <br> </h3>
 
             <ul class="desc" style="padding-top:10px">
                 <!--满减-->
                 <li>
-                    免税价：<span class="price color-orange">¥ 651</span>
+                    免税价：<span class="price color-orange"></span>
                     <span class="fr"><del class="price-old">市场价：¥ 840</del></span>
                 </li>
             </ul>
@@ -134,9 +135,8 @@
                     </li>
 
                     <li class="amount">数量：<a href="javascript:;" class="reduce disabled" id="js-reduce">-</a><span
-                            id="js-val" class="val" data-value="1">1</span><a href="javascript:;" class="add "
+                            id="js-val" class="val" data-value="1">1</span><a href="javascript:;" class="add"
                             id="js-add">+</a>
-                        <span>商品限购数量12件</span>
                         <span id="sp-amount-notice" class="amount-alert sp-amount-notice"></span>
                         <input type="hidden" id="cit_limit_amount" value="12">
                     </li>
@@ -202,6 +202,24 @@
     </div>
     <div class="clear"></div>
     <!-- 商品详情end -->
+    <!-- 遮罩 -->
+    <div style="z-index: 10000; width: 100%; height: 2667px; display: none;opacity:0.6" class="maskDiv popup-bg"
+        id="masksDiv0">
+    </div>
+    <!-- 加入购物车成功页面 -->
+    <div id="login-dialog" class="dialog"
+        style="left: 50%; margin-left: -200px; display: none;width: 400px; height: 200px; z-index: 10001; top: 228px; position: fixed;">
+        <h3 class="title">操作提示</h3>
+        <div class="contents">
+            <p class="txt"><span class="success"><em></em>商品已加入购物车</span></p>
+            <p class="btn">
+                <a class="btncon" href="javascript:;" title="<<继续购物">&lt;&lt;继续购物</a>
+                <a class="btnstop" href="http://10.31.158.39:8088/javascript/mianshuiyigou/src/cart.html"
+                    title="去购物车>>">
+                    <span class="orange">去购物车&gt;&gt;</span></a>
+            </p>
+        </div>
+    </div>
     <script src="script/thirdplugins/jquery.min.js"></script>
     <script src="script/thirdplugins/jquery.cookie.js"></script>
     <script src="script/js/index.js"></script>
