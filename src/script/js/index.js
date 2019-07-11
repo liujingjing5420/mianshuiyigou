@@ -111,7 +111,7 @@
 				let _this = this;
 				this.timer = setInterval(function () {
 					_this.rightclick();
-				}, 3000)
+				}, 4000)
 			}
 
 		}
@@ -167,7 +167,6 @@
 						this.circle.on('mouseover', function () {
 							$(this).addClass('swiper-visible-switch swiper-active-switch').siblings().removeClass('swiper-visible-switch swiper-active-switch');
 							let index = $(this).index();
-							console.log(index);
 							_this.ul.animate({
 								left: -_this.width * (index + 1)
 							})

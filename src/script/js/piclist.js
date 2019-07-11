@@ -21,8 +21,7 @@
 						<dt class="goods-icon">
 							<img class="lazy"
                                 data-original="${value.url}"
-                                src="${value.url}"
-								style="display: block;">
+								style="display: block;width:200px;height:200px">
 						</dt>
 						<dd class="brand text-ellipsis1">${value.title}</dd>
 						<dd class="name text-ellipsis1">${value.des}</dd>
@@ -33,6 +32,13 @@
             `;
         });
         $goodsl.html(htmlstr);
+        !function ($) {
+            $(function () {
+                $("img.lazy").lazyload({
+                    effect: "fadeIn"
+                });
+            })
+        }(jQuery)
     }).fail(function (data) {
         console.log(data);
     });
