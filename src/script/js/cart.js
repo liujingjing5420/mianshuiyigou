@@ -23,17 +23,22 @@
                     }
                 })
             })
-            const $price = $('.cuxiao1 table').find('.color11');
-            $price.not($price.first()).each(function (index, value) {
-                let price = $(this).find('strong').html();
-                console.log(price);
-                let num = $(this).parents('table').next().find('.val').val();
-                console.log(num);
-                let $sum = $(this).parents('table').next().find('.lajix');
-                $sum.html(Number(price) * Number(num));
-            })
-
+            summoney();
         });
+        changenum(arrid, arrnums);
+        deletegoods(arrid, arrnums);
+        select();
+    } else {
+        let htmlstr = '';
+        htmlstr += `<div class="empty">您的购物车什么都没有，快去<a href="index111.html">购物</a>吧~</div>`;
+        $('.cuxiao1').html(htmlstr);
+        $('.block-deliver').css('display', 'none');
+        $('.tiaomu').css('display', 'none');
+        $('#bottomdiv-wrap').css('display', 'none');
+    }
+    // 1.
+    // 改变购物车内商品的数量，加加，减减的函数
+    function changenum(arrid, arrnums) {
         // 购物车页面商品数量的变化
         $('.cuxiao1').on('click', '.add', function () {
             let num = $(this).prev().val();
@@ -46,6 +51,7 @@
                 arrnums[index] = $(this).prev().val();
                 $.cookie('goodsnums', arrnums.toString());
             }
+            summoney();
         })
         $('.cuxiao1').on('click', '.reduce', function () {
             let num = $(this).next().val();
@@ -61,12 +67,15 @@
                 arrnums[index] = $(this).next().val();
                 $.cookie('goodsnums', arrnums.toString());
             }
+            summoney();
         })
+    }
 
-
+    // 2.
+    // 删除商品的函数
+    function deletegoods(arrid, arrnums) {
         // 删除商品
         $('.cuxiao1').on('click', '.sj', function () {
-            console.log(this);
             const $parents = $(this).parents('table');
             // 将删除的商品从cookie中删掉
             let picid = $parents.find('.td343 dl dd img').attr('src').split('?')[1].slice(6);
@@ -75,11 +84,13 @@
             arrnums.splice(index, 1);
             $.cookie('goodsid', arrid.toString());
             $.cookie('goodsnums', arrnums.toString());
-            $parents.css({
-                display: 'none'
-            })
+            $parents.remove();
+            summoney();
         })
-
+    }
+    // 3.
+    // 全选按钮
+    function select() {
         // 全选按钮的实现
         // 全选按钮
         const $checkall = $('.checkall');
@@ -100,6 +111,7 @@
                 })
                 $checkall.attr('checked', 'true');
             }
+            summoney();
         })
         // 当某个商品处于不选中的状态的时候，将全选按钮取消勾选
         $('.cuxiao1').on('click', '.checkone', function () {
@@ -121,14 +133,29 @@
                 $checkall.attr('checked', 'true');
                 window.location.reload();
             }
+            summoney();
         })
-
-    } else {
-        let htmlstr = '';
-        htmlstr += `<div class="empty">您的购物车什么都没有，快去<a href="index111.html">购物</a>吧~</div>`;
-        $('.cuxiao1').html(htmlstr);
-        $('.block-deliver').css('display', 'none');
-        $('.tiaomu').css('display', 'none');
-        $('#bottomdiv-wrap').css('display', 'none');
+    }
+    // 4.
+    // 计算总价的函数
+    function summoney() {
+        const $price = $('.cuxiao1 table').find('.color11');
+        // 计算每个商品单独的总价(单价*数量)
+        $price.not($price.first()).each(function (index, value) {
+            let price = $(this).find('strong').html();
+            let $num = $(this).parents('.td159').next().find('.val');
+            let $sum = $num.parents('.td138').next().find('.lajix');
+            $sum.html('总价：' + price * $num.val());
+        })
+        const $onesum = $('.cuxiao1 table').find('.lajix');
+        const $SUM = $('.p4 span');
+        let num = 0;
+        $onesum.not($onesum.first()).each(function (index, value) {
+            let $confirm = $(this).parents('table').find('.checkone');
+            if ($confirm.attr('checked')) {
+                num += Number($(this).html().slice(3));
+            }
+        })
+        $SUM.html('￥' + num);
     }
 }(jQuery);
