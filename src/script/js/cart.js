@@ -1,4 +1,23 @@
 ; !function ($) {
+    // 引入与首页相同的部分
+    ; !function ($) {
+        $(".top").load("index111.html .f-home-top", function () {
+            // 用户登录以后，利用cookie取用户名，做欢迎页面
+            if ($.cookie('username')) {
+                $('#user_welcome #txt_user_btns').html(`欢迎，${$.cookie('username')}&nbsp;<span>|</span>
+                    <a href="javascript:hmpub.logout()" title="退出" class="tuichu">退出</a>
+                    `);
+                $('.tuichu').on('click', function () {
+                    $.cookie('username', '', { expires: -1 });
+                    $('#user_welcome #txt_user_btns').html(`<a id="txt_user_login" href="login.html" title="登录">登录</a><span>|</span>
+                        <a id="txt_user_register" href="registor.html" title="注册 ">注册</a>
+                    `);
+                })
+            }
+        });
+        $(".container").load("index111.html .f-home-logo-container");
+        $(".nav").load("index111.html .f-home-nav");
+    }(jQuery)
     //获取cookie中所存的购物车商品的信息，渲染。
     if ($.cookie('goodsid') && $.cookie('goodsnums')) {
         let arrid = $.cookie('goodsid').split(',');
@@ -158,4 +177,5 @@
         })
         $SUM.html('￥' + num);
     }
+
 }(jQuery);

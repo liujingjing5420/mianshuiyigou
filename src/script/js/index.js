@@ -8,6 +8,21 @@
 			$(this).addClass('click_focus').siblings().removeClass('click_focus');
 			$tabItem.eq($(this).index()).show().siblings().hide();
 		})
+
+		// 首页 二级菜单
+		const $navItems = $('.nav-items');
+		const $ItemS = $('.item');
+		const $subnav = $('.sub-nav');
+		$ItemS.on('mouseover', function () {
+			$(this).addClass('on-item').siblings().removeClass('on-item');
+			$navItems.show();
+			$subnav.eq($(this).index()).show().siblings().hide();
+		})
+		$ItemS.on('mouseout', function () {
+			$ItemS.removeClass('on-item');
+			$navItems.hide();
+			$subnav.hide();
+		})
 	}(jQuery);
 	//tab切换end
 
@@ -117,37 +132,79 @@
 			})
 		}
 	}(jQuery);
-
+	// 懒加载
 	!function ($) {
-		// 幻灯片效果
-		class Huandengpian {
-			constructor() {
-				this.circle = $('.pagination span');
-				this.pics = $('.swiper-slide');
-				this.wrapper = $('.swiper-container .swiper-wrapper');
-				this.width = -this.pics.width();
-				this.num = null;
-				this.timer = null;
-			}
-			init() {
-				let _this = this;
-				// alert(this.width);
-				// alert(this.wrapper.eq(4).position().left)
-				// this.circle.on('mouseover', function () {
-				// 	$(this).addClass('swiper-active-switch').siblings().removeClass('swiper-visible-switch swiper-active-switch');
-				// 	console.log($(this).index());
-				// })
-				setInterval(function () {
-					_this.num++;
-					if (_this.num > _this.circle.length - 1) {
-						_this.num = 0;
+		$(function () {
+			$("img.lazy").lazyload({
+				effect: "fadeIn"
+			});
+		})
+	}(jQuery)
+
+		; !function ($) {
+			// 幻灯片效果
+			hdp('#floor-acc');
+			hdp('#floor-bags');
+			hdp('#floor-fragrance');
+			hdp('#floor-makeup');
+			hdp('#floor-watch');
+			function hdp(options) {
+				class Huandengpian {
+					constructor() {
+						this.circle = $(options).find('.pagination .swiper-pagination-switch');
+						this.pics = $(options).find('.swiper-slide');
+						this.width = $(options).find('.swiper-slide').width();
+						this.ul = $(options).find('.swiper-wrapper');
+						this.container = $(options).find('.swiper-container');
+						this.timer = null;
+						this.num = 0;
 					}
-					_this.circle.eq(_this.num).addClass('swiper-active-switch').siblings().removeClass('swiper-visible-switch swiper-active-switch');
-
-				}, 1000)
+					init() {
+						this.ul.css({
+							left: -this.width,
+						});
+						let _this = this;
+						this.circle.on('mouseover', function () {
+							$(this).addClass('swiper-visible-switch swiper-active-switch').siblings().removeClass('swiper-visible-switch swiper-active-switch');
+							let index = $(this).index();
+							console.log(index);
+							_this.ul.animate({
+								left: -_this.width * (index + 1)
+							})
+						})
+						this.timer = setInterval(function () {
+							_this.autoplay();
+						}, 5000)
+						this.container.on('mouseover', function () {
+							clearInterval(_this.timer);
+						})
+						this.container.on('mouseout', function () {
+							_this.timer = setInterval(function () {
+								_this.autoplay();
+							}, 5000)
+						})
+					}
+					// 自动播放
+					autoplay() {
+						let _this = this;
+						this.num++;
+						this.ul.animate({
+							left: -this.width * (this.num + 1)
+						}, 2000, function () {
+							if (_this.num > _this.circle.size() - 1) {
+								_this.ul.css({
+									left: -_this.width,
+								})
+								_this.num = 0;
+							}
+						})
+						if (this.num === _this.circle.size()) {
+							this.circle.eq(0).addClass('swiper-visible-switch swiper-active-switch').siblings().removeClass('swiper-visible-switch swiper-active-switch');
+						}
+						this.circle.eq(this.num).addClass('swiper-visible-switch swiper-active-switch').siblings().removeClass('swiper-visible-switch swiper-active-switch');
+					}
+				}
+				new Huandengpian().init();
 			}
-		}
-		new Huandengpian().init();
-	}(jQuery);
-
+		}(jQuery);
 }(jQuery);

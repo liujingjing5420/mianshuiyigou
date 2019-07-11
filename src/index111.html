@@ -30,250 +30,6 @@
 <body>
 	<script src="script/thirdplugins/jquery.min.js"></script>
 	<script src="script/thirdplugins/jquery.cookie.js"></script>
-	<!--右侧导航栏 start-->
-	<div class="right-bar">
-		<div class="menu">
-			<a href="/cms_shop_4.html" class="link-txt pt" target="_blank">离岛免税须知</a>
-			<a href="javascript:void(0)" class="link-txt" layer="rbShopping">购物流程</a>
-			<div class="cart" layer="rbCart">
-				<div class="icon icon-cart"></div>
-				<div class="txt">购物车</div>
-				<div class="icon icon-orange-bg">0</div>
-			</div>
-			<div class="icon-nav" layer="rbActivity"><a class="icon icon-gift"></a>
-				<div class="icon-name">
-					<div class="c">超值活动</div>
-				</div>
-			</div>
-			<div class="icon-nav"><a href="/brand.html" target="_blank" class="icon icon-brand"></a>
-				<div class="icon-name">
-					<div class="c">全部品牌</div>
-				</div>
-			</div>
-			<div class="icon-nav"><a href="/?_c=category&amp;_a=index" target="_blank" class="icon icon-category"></a>
-				<div class="icon-name">
-					<div class="c">商品分类</div>
-				</div>
-			</div>
-			<div class="icon-nav" layer="rbAsset"><a class="icon icon-money"></a>
-				<div class="icon-name">
-					<div class="c">我的资产</div>
-				</div>
-			</div>
-			<div class="icon-nav" layer="rbFavorite"><a class="icon icon-fav"></a>
-				<div class="icon-name">
-					<div class="c">我的收藏</div>
-				</div>
-			</div>
-			<div class="icon-nav" layer="rbFootstep"><a class="icon icon-footstep"></a>
-				<div class="icon-name">
-					<div class="c">我的足迹</div>
-				</div>
-			</div>
-			<div class="bt-icons">
-				<div class="icon-nav openKfSDk">
-					<span class="icon icon-kf1"></span>
-					<div class="icon-name">
-						<div class="c">在线客服</div>
-					</div>
-				</div>
-				<div class="icon-nav">
-					<span class="icon icon-qr"></span>
-					<!-- <div class="rb-right-arrow"></div> -->
-					<div class="rb-qr">
-						<div class="con-wrap clear-fix">
-							<div class="rb-qr-info">
-								<div class="title">APP</div>
-								<div class="right-bar-icons icon-qr-m"></div>
-								<!-- <div class="desc">下单享返现</div> -->
-							</div>
-							<div class="rb-qr-info">
-								<div class="title">WAP页</div>
-								<div class="right-bar-icons icon-qr-d"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="icon-nav" act="toTop"><span class="icon icon-top"></span>
-					<div class="icon-name">
-						<div class="c">回到顶部</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="right-bar-layer">
-			<!-- 弹层购物流程开始 -->
-			<div class="rb-shopping-step" layerid="rbShopping">
-				<div class="rb-layer-head"><span class="right-bar-icons icon-rb-close"></span>购物流程</div>
-				<div class="rb-layer-body">
-					<div class="scrollbar">
-						<div class="track">
-							<div class="thumb">
-								<div class="end"></div>
-							</div>
-						</div>
-					</div>
-					<div class="viewport">
-						<div class="overview">
-							<div class="steps">
-								<div class="right-bar-icons icon-act-step1">
-									<p class="step-title">选择商品</p>
-									<p class="step-desc">官网专享优惠</p>
-								</div>
-								<div class="down-wrap">
-									<div class="right-bar-icons icon-down-arrow"></div>
-								</div>
-								<div class="right-bar-icons icon-act-step2">
-									<p class="step-title">确认订单</p>
-									<p class="step-desc">验证免税额度及离岛行程</p>
-								</div>
-								<div class="down-wrap">
-									<div class="right-bar-icons icon-down-arrow"></div>
-								</div>
-								<div class="right-bar-icons icon-act-step3">
-									<p class="step-title">提交订单并付款</p>
-									<p class="step-desc">未提货支持无理由退款</p>
-								</div>
-								<div class="down-wrap">
-									<div class="right-bar-icons icon-down-arrow"></div>
-								</div>
-								<div class="right-bar-icons icon-act-step4">
-									<p class="step-title">前往提货处</p>
-									<p class="step-desc">机场/火车站/港口</p>
-								</div>
-								<div class="down-wrap">
-									<div class="right-bar-icons icon-down-arrow"></div>
-								</div>
-								<div class="right-bar-icons icon-act-step5">
-									<p class="step-title">验收提货</p>
-									<p class="step-desc">一站式快捷提货</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- 弹层购物流程结束 -->
-			<!-- 弹层购物车开始 -->
-			<div class="rb-mycart" layerid="rbCart">
-				<div class="rb-layer-head"><span class="right-bar-icons icon-rb-close"></span>购物车</div>
-				<div class="rb-layer-body">
-					<div class="scrollbar">
-						<div class="track">
-							<div class="thumb">
-								<div class="end"></div>
-							</div>
-						</div>
-					</div>
-					<div class="viewport">
-						<div class="overview">
-							<div class="rb-layer-body-con">
-								<div class="rb-loadfail"><span class="right-bar-icons icon-rb-fail"></span>
-									<p class="failtxt">购物车暂无商品，快去挑选心仪的商品吧~</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="rb-layer-bottom none">
-					<div class="total clear-fix">
-						<p class="amount">共<span>32</span>件商品</p>
-						<p class="total-price">合计：<span>7676.00</span>元</p>
-					</div>
-					<a href="/cart.html" target="_blank" class="rb-ora-btn">去购物车结算 </a>
-				</div>
-			</div>
-			<!-- 弹层购物车结束 -->
-			<!-- 弹层超值活动开始 -->
-			<div class="rb-activity" layerid="rbActivity">
-				<div class="rb-layer-head"><span class="right-bar-icons icon-rb-close"></span><span
-						class="rb-act-title"></span></div>
-				<div class="rb-layer-body">
-					<div class="scrollbar">
-						<div class="track">
-							<div class="thumb">
-								<div class="end"></div>
-							</div>
-						</div>
-					</div>
-					<div class="viewport">
-						<div class="overview">
-							<div class="rb-layer-body-con"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- 弹层超值活动结束 -->
-			<!-- 弹层我的资产开始 -->
-			<div class="rb-asset" layerid="rbAsset">
-				<div class="rb-layer-head"><span class="right-bar-icons icon-rb-close"></span>我的资产</div>
-				<div class="rb-layer-bar clear-fix none">
-					<div class="item">
-						<p class="type">优惠券</p>
-						<p class="num" name="couponnum">0</p>
-					</div>
-					<div class="item">
-						<p class="type">红包</p>
-						<p class="num" name="redelnum">0</p>
-					</div>
-				</div>
-				<div class="rb-layer-body">
-					<div class="scrollbar">
-						<div class="track">
-							<div class="thumb">
-								<div class="end"></div>
-							</div>
-						</div>
-					</div>
-					<div class="viewport">
-						<div class="overview">
-							<div class="rb-layer-body-con"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- 弹层我的资产结束 -->
-			<!-- 弹层我的收藏开始 -->
-			<div class="rb-favorite" layerid="rbFavorite">
-				<div class="rb-layer-head"><span class="right-bar-icons icon-rb-close"></span>我的收藏</div>
-				<div class="rb-layer-body">
-					<div class="scrollbar">
-						<div class="track">
-							<div class="thumb">
-								<div class="end"></div>
-							</div>
-						</div>
-					</div>
-					<div class="viewport">
-						<div class="overview">
-							<div class="rb-layer-body-con"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- 弹层我的收藏结束 -->
-			<!-- 弹层我的足迹开始 -->
-			<div class="rb-footstep" layerid="rbFootstep">
-				<div class="rb-layer-head"><span class="right-bar-icons icon-rb-close"></span>我的足迹</div>
-				<div class="rb-layer-body">
-					<div class="scrollbar">
-						<div class="track">
-							<div class="thumb">
-								<div class="end"></div>
-							</div>
-						</div>
-					</div>
-					<div class="viewport">
-						<div class="overview">
-							<div class="rb-layer-body-con"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- 弹层我的足迹结束 -->
-		</div>
-	</div>
-	<!--右侧导航栏 end-->
 	<!-- top 顶部登录注册栏 start-->
 	<div class="f-home-top" id="page-top">
 		<div class="contents" style="position: relative">
@@ -1428,36 +1184,28 @@
 			<div class="floor-con clear-fix">
 				<div class="floor-con-banner small-banner">
 					<div class="swiper-container">
-						<div class="swiper-wrapper"
-							style="width: 1920px; transform: translate3d(-480px, 0px, 0px); transition-duration: 1s; height: 479px;">
+						<div class="swiper-wrapper" style="width: 1920px;">
 							<div class="swiper-slide swiper-slide-duplicate" style="width: 480px; height: 479px;"><a
 									href="https://s.mianshui365.com/list.html?source=4&amp;keyword=SK-II"
-									target="_blank"><img class="lazy-swiper"
+									target="_blank">
+									<img class="lazy"
 										data-original="//img.mianshui365.com/upload/be/fd/8e/befd8ef71ea4f06bb4e47dfa4f1cc8ba.png"
-										alt=""
-										src="//img.mianshui365.com/upload/be/fd/8e/befd8ef71ea4f06bb4e47dfa4f1cc8ba.png"
-										style="display: inline;"></a></div>
+										alt="" style="display: inline-block;width: 480px; height: 479px;"></a></div>
 							<div class="swiper-slide" style="width: 480px; height: 479px;"><a
 									href="https://s.mianshui365.com/list.html?source=0&amp;keyword=%E7%A7%91%E9%A2%9C%E6%B0%8F"
-									target="_blank"><img class="lazy-swiper"
+									target="_blank"><img class="lazy"
 										data-original="//img.mianshui365.com/upload/a3/75/59/a37559cf08e508ff2ab98f79435dee53.png"
-										alt=""
-										src="//img.mianshui365.com/upload/a3/75/59/a37559cf08e508ff2ab98f79435dee53.png"
-										style="display: inline;"></a></div>
+										alt="" style="display: inline-block;width: 480px; height: 479px;"></a></div>
 							<div class="swiper-slide" style="width: 480px; height: 479px;"><a
 									href="https://s.mianshui365.com/list.html?source=4&amp;keyword=SK-II"
-									target="_blank"><img class="lazy-swiper"
+									target="_blank"><img class="lazy"
 										data-original="//img.mianshui365.com/upload/be/fd/8e/befd8ef71ea4f06bb4e47dfa4f1cc8ba.png"
-										alt=""
-										src="//img.mianshui365.com/upload/be/fd/8e/befd8ef71ea4f06bb4e47dfa4f1cc8ba.png"
-										style="display: inline;"></a></div>
+										alt="" style="display: inline-block;width: 480px; height: 479px;"></a></div>
 							<div class="swiper-slide swiper-slide-duplicate" style="width: 480px; height: 479px;"><a
 									href="https://s.mianshui365.com/list.html?source=0&amp;keyword=%E7%A7%91%E9%A2%9C%E6%B0%8F"
-									target="_blank"><img class="lazy-swiper"
+									target="_blank"><img class="lazy"
 										data-original="//img.mianshui365.com/upload/a3/75/59/a37559cf08e508ff2ab98f79435dee53.png"
-										alt=""
-										src="//img.mianshui365.com/upload/a3/75/59/a37559cf08e508ff2ab98f79435dee53.png"
-										style="display: inline;"></a></div>
+										alt="" style="display: inline-block;width: 480px; height: 479px;"></a></div>
 						</div>
 						<div class="pagination pagination0" paginationind="0"><span
 								class="swiper-pagination-switch swiper-visible-switch swiper-active-switch"></span><span
@@ -1473,8 +1221,7 @@
 							<div class="img">
 								<img class="lazy"
 									data-original="//img.mianshui365.com/upload/20160622/17225596415.jpg@200h_200w_90q_1wh"
-									src="//img.mianshui365.com/upload/20160622/17225596415.jpg@200h_200w_90q_1wh"
-									style="display: block;">
+									style="display: block;width:160px;height:160px">
 							</div>
 							<div class="info">
 								<p class="pd-brand text-overflow">兰蔻</p>
@@ -1490,8 +1237,7 @@
 							<div class="img">
 								<img class="lazy"
 									data-original="//img.mianshui365.com/upload/76/67/31/7667315f309ef9793049745456f6c584.jpg@200h_200w_90q_1wh"
-									src="//img.mianshui365.com/upload/76/67/31/7667315f309ef9793049745456f6c584.jpg@200h_200w_90q_1wh"
-									style="display: block;">
+									style="display: block;width:160px;height:160px">
 							</div>
 							<div class="info">
 								<p class="pd-brand text-overflow">悦木之源</p>
@@ -1507,8 +1253,7 @@
 							<div class="img">
 								<img class="lazy"
 									data-original="//img.mianshui365.com/upload/6d/95/0d/6d950d4d5c22558d9b75a08c620a080b.jpg@200h_200w_90q_1wh"
-									src="//img.mianshui365.com/upload/6d/95/0d/6d950d4d5c22558d9b75a08c620a080b.jpg@200h_200w_90q_1wh"
-									style="display: block;">
+									style="display: block;width:160px;height:160px">
 							</div>
 							<div class="info">
 								<p class="pd-brand text-overflow">雅诗兰黛</p>
@@ -1524,8 +1269,7 @@
 							<div class="img">
 								<img class="lazy"
 									data-original="//img.mianshui365.com/upload/2a/e6/7c/2ae67c033f89c15439c2578ba2b68f70.jpg@200h_200w_90q_1wh"
-									src="//img.mianshui365.com/upload/2a/e6/7c/2ae67c033f89c15439c2578ba2b68f70.jpg@200h_200w_90q_1wh"
-									style="display: block;">
+									style="display: block;width:160px;height:160px">
 							</div>
 							<div class="info">
 								<p class="pd-brand text-overflow">雅诗兰黛</p>
@@ -1549,7 +1293,7 @@
 									<div class="brand-img">
 										<img class="lazy"
 											data-original="//img.mianshui365.com/upload/0c/7f/b9/0c7fb906141be828a0f3c2f684ba2feb.jpg@90q"
-											src="http://img.mianshui365.com/upload/0c/7f/b9/0c7fb906141be828a0f3c2f684ba2feb.jpg@90q">
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">雅诗兰黛</div>
 								</a>
@@ -1559,7 +1303,7 @@
 									<div class="brand-img">
 										<img class="lazy"
 											data-original="//img.mianshui365.com/upload/20161020/22375310466.jpg@90q"
-											src="//img.mianshui365.com/upload/20161020/22375310466.jpg@90q">
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">兰蔻</div>
 								</a>
@@ -1569,7 +1313,7 @@
 									<div class="brand-img">
 										<img class="lazy"
 											data-original="//img.mianshui365.com/upload/20161020/22354187575.jpg@90q"
-											src="//img.mianshui365.com/upload/20161020/22354187575.jpg@90q">
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">科颜氏</div>
 								</a>
@@ -1579,7 +1323,7 @@
 									<div class="brand-img">
 										<img class="lazy"
 											data-original="//img.mianshui365.com/upload/20161020/22593348935.jpg@90q"
-											src="//img.mianshui365.com/upload/20161020/22593348935.jpg@90q">
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">雪花秀</div>
 								</a>
@@ -1589,7 +1333,7 @@
 									<div class="brand-img">
 										<img class="lazy"
 											data-original="//img.mianshui365.com/upload/20170605/18212824946.jpg@90q"
-											src="//img.mianshui365.com/upload/20161020/22593348935.jpg@90q">
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">后</div>
 								</a>
@@ -1599,7 +1343,7 @@
 									<div class="brand-img">
 										<img class="lazy"
 											data-original="//img.mianshui365.com/upload/13/ae/93/13ae93266ef2b3bbdc0ffca1e4519b89.jpg@90q"
-											src="//img.mianshui365.com/upload/20161020/22593348935.jpg@90q">
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">爱和纯</div>
 								</a>
@@ -1626,35 +1370,28 @@
 			<div class="floor-con clear-fix">
 				<div class="floor-con-banner small-banner">
 					<div class="swiper-container">
-						<div class="swiper-wrapper"
-							style="width: 1920px; transform: translate3d(-480px, 0px, 0px); transition-duration: 1s; height: 479px;">
+						<div class="swiper-wrapper" style="width: 1920px; ">
 							<div class="swiper-slide swiper-slide-duplicate" style="width: 480px; height: 479px;">
 								<a href="https://s.mianshui365.com/list.html?source=4&amp;keyword=%E7%BA%AA%E6%A2%B5%E5%B8%8C"
-									target="_blank"><img class="lazy-swiper"
+									target="_blank"><img class="lazy"
 										data-original="//img.mianshui365.com/upload/02/80/e9/0280e9c94c550fd8fc51361bf6163e91.png"
-										alt=""></a></div>
+										alt="" style="width: 480px; height: 479px;"></a></div>
 							<div class="swiper-slide" style="width: 480px; height: 479px;"><a
 									href="https://s.mianshui365.com/list.html?source=0&amp;keyword=cpb"
-									target="_blank"><img class="lazy-swiper"
+									target="_blank"><img class="lazy"
 										data-original="//img.mianshui365.com/upload/a2/ff/d4/a2ffd44500e9c18d6314f757f61b4787.png"
-										alt=""
-										src="//img.mianshui365.com/upload/a2/ff/d4/a2ffd44500e9c18d6314f757f61b4787.png"
-										style="display: inline;"></a></div>
+										alt="" style="display: inline-block;width: 480px; height: 479px;"></a></div>
 							<div class="swiper-slide swiper-slide-visible swiper-slide-active"
 								style="width: 480px; height: 479px;"><a
 									href="https://s.mianshui365.com/list.html?source=4&amp;keyword=%E7%BA%AA%E6%A2%B5%E5%B8%8C"
-									target="_blank"><img class="lazy-swiper"
+									target="_blank"><img class="lazy"
 										data-original="//img.mianshui365.com/upload/02/80/e9/0280e9c94c550fd8fc51361bf6163e91.png"
-										alt=""
-										src="//img.mianshui365.com/upload/02/80/e9/0280e9c94c550fd8fc51361bf6163e91.png"
-										style="display: inline;"></a></div>
+										alt="" style="display: inline-block;width: 480px; height: 479px;"></a></div>
 							<div class="swiper-slide swiper-slide-duplicate" style="width: 480px; height: 479px;"><a
 									href="https://s.mianshui365.com/list.html?source=0&amp;keyword=cpb"
 									target="_blank"><img class="lazy-swiper"
 										data-original="//img.mianshui365.com/upload/a2/ff/d4/a2ffd44500e9c18d6314f757f61b4787.png"
-										alt=""
-										src="//img.mianshui365.com/upload/a2/ff/d4/a2ffd44500e9c18d6314f757f61b4787.png"
-										style="display: inline;"></a></div>
+										alt="" style="display: inline-block;width: 480px; height: 479px;"></a></div>
 						</div>
 						<div class="pagination pagination1" paginationind="1"><span
 								class="swiper-pagination-switch swiper-visible-switch swiper-active-switch"></span><span
@@ -1671,8 +1408,7 @@
 							<div class="img">
 								<img class="lazy"
 									data-original="//img.mianshui365.com/upload/95/0f/64/950f64ba37eddf70f83f922f4354bb22.jpg@200h_200w_90q_1wh"
-									src="//img.mianshui365.com/upload/95/0f/64/950f64ba37eddf70f83f922f4354bb22.jpg@200h_200w_90q_1wh"
-									style="display: block;">
+									style="display: block;width:160px;height:160px">
 							</div>
 							<div class="info">
 								<p class="pd-brand text-overflow">祖玛龙</p>
@@ -1690,10 +1426,9 @@
 							<div class="img">
 								<img class="lazy"
 									data-original="//img.mianshui365.com/upload/45/f8/a6/45f8a666684ccf93c984ede4452e14ef.jpg@200h_200w_90q_1wh"
-									src="//img.mianshui365.com/upload/45/f8/a6/45f8a666684ccf93c984ede4452e14ef.jpg@200h_200w_90q_1wh"
-									style="display: block;">
+									style="display: block;width:160px;height:160px">
 							</div>
-							<div class="info">
+							<div class=" info">
 								<p class="pd-brand text-overflow">纪梵希</p>
 								<p class="pd-name text-overflow">高定香榭天鹅绒唇膏304(小羊皮) 3.4g</p>
 								<p class="pd-price text-overflow">¥245</p>
@@ -1708,8 +1443,7 @@
 							<div class="img">
 								<img class="lazy"
 									data-original="//img.mianshui365.com/upload/20160313/12503083265.jpg@200h_200w_90q_1wh"
-									src="//img.mianshui365.com/upload/20160313/12503083265.jpg@200h_200w_90q_1wh"
-									style="display: block;">
+									style="display: block;width:160px;height:160px">
 							</div>
 							<div class="info">
 								<p class="pd-brand text-overflow">雪花秀</p>
@@ -1726,8 +1460,7 @@
 							<div class="img">
 								<img class="lazy"
 									data-original="//img.mianshui365.com/upload/db/2f/2f/db2f2f1937fe399d3197c884ac0cc884.jpg@200h_200w_90q_1wh"
-									src="//img.mianshui365.com/upload/db/2f/2f/db2f2f1937fe399d3197c884ac0cc884.jpg@200h_200w_90q_1wh"
-									style="display: block;">
+									style="display: block;width:160px;height:160px">
 							</div>
 							<div class="info">
 								<p class="pd-brand text-overflow">圣罗兰</p>
@@ -1752,7 +1485,7 @@
 									<div class="brand-img">
 										<img class="lazy"
 											data-original="//img.mianshui365.com/upload/20161020/22092210011.jpg@90q"
-											src="//img.mianshui365.com/upload/20161020/22593348935.jpg@90q">
+											style="width:100;height:30px">
 									</div>
 									<div class="desc text-overflow">芭比波朗</div>
 								</a>
@@ -1762,7 +1495,7 @@
 									<div class="brand-img">
 										<img class="lazy"
 											data-original="//img.mianshui365.com/upload/20161020/22072551290.jpg@90q"
-											src="//img.mianshui365.com/upload/20161020/22593348935.jpg@90q">
+											style="width:100;height:30px">
 									</div>
 									<div class="desc text-overflow">爱马仕</div>
 								</a>
@@ -1772,7 +1505,7 @@
 									<div class="brand-img">
 										<img class="lazy"
 											data-original="//img.mianshui365.com/upload/20161020/22105430957.jpg@90q"
-											src="//img.mianshui365.com/upload/20161020/22593348935.jpg@90q">
+											style="width:100;height:30px">
 									</div>
 									<div class="desc text-overflow">宝格丽</div>
 								</a>
@@ -1782,7 +1515,7 @@
 									<div class="brand-img">
 										<img class="lazy"
 											data-original="//img.mianshui365.com/upload/20161020/22204134746.jpg@90q"
-											src="//img.mianshui365.com/upload/20161020/22593348935.jpg@90q">
+											style="width:100;height:30px">
 									</div>
 									<div class="desc text-overflow">范思哲</div>
 								</a>
@@ -1792,7 +1525,7 @@
 									<div class="brand-img">
 										<img class="lazy"
 											data-original="//img.mianshui365.com/upload/20161020/22250398812.jpg@90q"
-											src="//img.mianshui365.com/upload/20161020/22593348935.jpg@90q">
+											style="width:100;height:30px">
 									</div>
 									<div class="desc text-overflow">古驰</div>
 								</a>
@@ -1802,7 +1535,7 @@
 									<div class="brand-img">
 										<img class="lazy"
 											data-original="//img.mianshui365.com/upload/20170605/18220172394.jpg@90q"
-											src="//img.mianshui365.com/upload/20161020/22593348935.jpg@90q">
+											style="width:100;height:30px">
 									</div>
 									<div class="desc text-overflow">娇兰</div>
 								</a>
@@ -1813,7 +1546,8 @@
 								<a href="//s.mianshui365.com/brand/19.html" target="_blank">
 									<div class="brand-img">
 										<img class="lazy"
-											data-original="//img.mianshui365.com/upload/ba/fb/0e/bafb0e089cc969e27fca599cb98a9d32.jpg@90q">
+											data-original="//img.mianshui365.com/upload/ba/fb/0e/bafb0e089cc969e27fca599cb98a9d32.jpg@90q"
+											style="width:100;height:30px">
 									</div>
 									<div class="desc text-overflow">纪梵希</div>
 								</a>
@@ -1821,7 +1555,8 @@
 							<li>
 								<a href="//s.mianshui365.com/brand/172.html" target="_blank">
 									<div class="brand-img">
-										<img class="lazy" data-original="//img.mianshui365.com">
+										<img class="lazy" data-original="//img.mianshui365.com"
+											style="width:100;height:30px">
 									</div>
 									<div class="desc text-overflow">蔻依</div>
 								</a>
@@ -1830,7 +1565,8 @@
 								<a href="//s.mianshui365.com/brand/284.html" target="_blank">
 									<div class="brand-img">
 										<img class="lazy"
-											data-original="//img.mianshui365.com/upload/20161216/19290675377.jpg@90q">
+											data-original="//img.mianshui365.com/upload/20161216/19290675377.jpg@90q"
+											style="width:100;height:30px">
 									</div>
 									<div class="desc text-overflow">露娜</div>
 								</a>
@@ -1839,7 +1575,8 @@
 								<a href="//s.mianshui365.com/brand/207.html" target="_blank">
 									<div class="brand-img">
 										<img class="lazy"
-											data-original="//img.mianshui365.com/upload/20161020/22474723650.jpg@90q">
+											data-original="//img.mianshui365.com/upload/20161020/22474723650.jpg@90q"
+											style="width:100;height:30px">
 									</div>
 									<div class="desc text-overflow">缪缪</div>
 								</a>
@@ -1848,7 +1585,8 @@
 								<a href="//s.mianshui365.com/brand/179.html" target="_blank">
 									<div class="brand-img">
 										<img class="lazy"
-											data-original="//img.mianshui365.com/upload/20161020/22593348935.jpg@90q">
+											data-original="//img.mianshui365.com/upload/20161020/22593348935.jpg@90q"
+											style="width:100;height:30px">
 									</div>
 									<div class="desc text-overflow">雪花秀</div>
 								</a>
@@ -1857,7 +1595,8 @@
 								<a href="//s.mianshui365.com/brand/80.html" target="_blank">
 									<div class="brand-img">
 										<img class="lazy"
-											data-original="//img.mianshui365.com/upload/0c/7f/b9/0c7fb906141be828a0f3c2f684ba2feb.jpg@90q">
+											data-original="//img.mianshui365.com/upload/0c/7f/b9/0c7fb906141be828a0f3c2f684ba2feb.jpg@90q"
+											style="width:100;height:30px">
 									</div>
 									<div class="desc text-overflow">雅诗兰黛</div>
 								</a>
@@ -1886,35 +1625,28 @@
 			<div class="floor-con clear-fix">
 				<div class="floor-con-banner small-banner">
 					<div class="swiper-container">
-						<div class="swiper-wrapper"
-							style="width: 1920px; transform: translate3d(-480px, 0px, 0px); transition-duration: 1s; height: 479px;">
+						<div class="swiper-wrapper" style="width: 1920px; ">
 							<div class="swiper-slide swiper-slide-duplicate" style="width: 480px; height: 479px;"><a
 									href="https://s.mianshui365.com/list.html?source=4&amp;keyword=%E8%89%BE%E7%B1%B3%E9%BE%99"
-									target="_blank"><img class="lazy-swiper"
+									target="_blank"><img class="lazy"
 										data-original="//img.mianshui365.com/upload/46/e1/04/46e104ac5095c0a48d81e64ede2ea48c.png"
-										alt=""></a></div>
+										alt="" style="width: 480px; height: 479px;"></a></div>
 							<div class="swiper-slide" style="width: 480px; height: 479px;"><a
 									href="https://s.mianshui365.com/list.html?source=3&amp;keyword=%E6%B5%AA%E7%90%B4"
-									target="_blank"><img class="lazy-swiper"
+									target="_blank"><img class="lazy"
 										data-original="//img.mianshui365.com/upload/1b/d4/47/1bd4478792c6d6bcd9794708d430e568.png"
-										alt=""
-										src="//img.mianshui365.com/upload/1b/d4/47/1bd4478792c6d6bcd9794708d430e568.png"
-										style="display: inline;"></a></div>
+										alt="" style="display: inline-block;width: 480px; height: 479px;"></a></div>
 							<div class="swiper-slide swiper-slide-visible swiper-slide-active"
 								style="width: 480px; height: 479px;"><a
 									href="https://s.mianshui365.com/list.html?source=4&amp;keyword=%E8%89%BE%E7%B1%B3%E9%BE%99"
-									target="_blank"><img class="lazy-swiper"
+									target="_blank"><img class="lazy"
 										data-original="//img.mianshui365.com/upload/46/e1/04/46e104ac5095c0a48d81e64ede2ea48c.png"
-										alt=""
-										src="//img.mianshui365.com/upload/46/e1/04/46e104ac5095c0a48d81e64ede2ea48c.png"
-										style="display: inline;"></a></div>
+										alt="" style="display: inline-block;width: 480px; height: 479px;"></a></div>
 							<div class="swiper-slide swiper-slide-duplicate" style="width: 480px; height: 479px;"><a
 									href="https://s.mianshui365.com/list.html?source=3&amp;keyword=%E6%B5%AA%E7%90%B4"
-									target="_blank"><img class="lazy-swiper"
+									target="_blank"><img class="lazy"
 										data-original="//img.mianshui365.com/upload/1b/d4/47/1bd4478792c6d6bcd9794708d430e568.png"
-										alt=""
-										src="//img.mianshui365.com/upload/1b/d4/47/1bd4478792c6d6bcd9794708d430e568.png"
-										style="display: inline;"></a></div>
+										alt="" style="display: inline-block;width: 480px; height: 479px;"></a></div>
 						</div>
 						<div class="pagination pagination2" paginationind="2"><span
 								class="swiper-pagination-switch swiper-visible-switch swiper-active-switch"></span><span
@@ -1931,8 +1663,7 @@
 							<div class="img">
 								<img class="lazy"
 									data-original="//img.mianshui365.com/upload/20160319/11445014054.jpg@200h_200w_90q_1wh"
-									src="//img.mianshui365.com/upload/20160319/11445014054.jpg@200h_200w_90q_1wh"
-									style="display: block;">
+									style="display: block;width:160px;height:160px">
 							</div>
 							<div class="info">
 								<p class="pd-brand text-overflow">美度</p>
@@ -1949,8 +1680,7 @@
 							<div class="img">
 								<img class="lazy"
 									data-original="//img.mianshui365.com/upload/f3/6b/1d/f36b1d2a878a3d6e6c6add0d0ec5c843.jpg@200h_200w_90q_1wh"
-									src="//img.mianshui365.com/upload/f3/6b/1d/f36b1d2a878a3d6e6c6add0d0ec5c843.jpg@200h_200w_90q_1wh"
-									style="display: block;">
+									style="display: block;width:160px;height:160px">
 							</div>
 							<div class="info">
 								<p class="pd-brand text-overflow">浪琴</p>
@@ -1967,8 +1697,7 @@
 							<div class="img">
 								<img class="lazy"
 									data-original="//img.mianshui365.com/upload/20140303/14510823949.jpg@200h_200w_90q_1wh"
-									src="//img.mianshui365.com/upload/20140303/14510823949.jpg@200h_200w_90q_1wh"
-									style="display: block;">
+									style="display: block;width:160px;height:160px">
 							</div>
 							<div class="info">
 								<p class="pd-brand text-overflow">天梭</p>
@@ -1984,8 +1713,7 @@
 							<div class="img">
 								<img class="lazy"
 									data-original="//img.mianshui365.com/upload/20160226/14210984651.jpg@200h_200w_90q_1wh"
-									src="//img.mianshui365.com/upload/20160226/14210984651.jpg@200h_200w_90q_1wh"
-									style="display: block;">
+									style="display: block;width:160px;height:160px">
 							</div>
 							<div class="info">
 								<p class="pd-brand text-overflow">欧米茄</p>
@@ -2010,7 +1738,7 @@
 									<div class="brand-img">
 										<img class="lazy"
 											data-original="//img.mianshui365.com/upload/20160802/14213997505.jpg@90q"
-											src="//img.mianshui365.com/upload/20161020/22593348935.jpg@90q">
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">天梭</div>
 								</a>
@@ -2020,7 +1748,7 @@
 									<div class="brand-img">
 										<img class="lazy"
 											data-original="//img.mianshui365.com/upload/20160802/14190220636.jpg@90q"
-											src="//img.mianshui365.com/upload/20161020/22593348935.jpg@90q">
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">浪琴</div>
 								</a>
@@ -2030,7 +1758,7 @@
 									<div class="brand-img">
 										<img class="lazy"
 											data-original="//img.mianshui365.com/upload/20160802/14202278194.jpg@90q"
-											src="//img.mianshui365.com/upload/20161020/22593348935.jpg@90q">
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">美度</div>
 								</a>
@@ -2040,7 +1768,7 @@
 									<div class="brand-img">
 										<img class="lazy"
 											data-original="//img.mianshui365.com/upload/20161020/22064849370.jpg@90q"
-											src="//img.mianshui365.com/upload/20161020/22593348935.jpg@90q">
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">艾米龙</div>
 								</a>
@@ -2050,7 +1778,7 @@
 									<div class="brand-img">
 										<img class="lazy"
 											data-original="//img.mianshui365.com/upload/20160802/14192872480.jpg@90q"
-											src="//img.mianshui365.com/upload/20161020/22593348935.jpg@90q">
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">雷达</div>
 								</a>
@@ -2060,7 +1788,7 @@
 									<div class="brand-img">
 										<img class="lazy"
 											data-original="//img.mianshui365.com/upload/20161020/22450786210.jpg@90q"
-											src="//img.mianshui365.com/upload/20161020/22593348935.jpg@90q">
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">梅花</div>
 								</a>
@@ -2071,7 +1799,8 @@
 								<a href="//s.mianshui365.com/brand/17.html" target="_blank">
 									<div class="brand-img">
 										<img class="lazy"
-											data-original="//img.mianshui365.com/upload/20161020/22081084536.jpg@90q">
+											data-original="//img.mianshui365.com/upload/20161020/22081084536.jpg@90q"
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">安普里奥·阿玛尼</div>
 								</a>
@@ -2080,7 +1809,8 @@
 								<a href="//s.mianshui365.com/brand/8.html" target="_blank">
 									<div class="brand-img">
 										<img class="lazy"
-											data-original="//img.mianshui365.com/upload/20161020/22332433796.jpg@90q">
+											data-original="//img.mianshui365.com/upload/20161020/22332433796.jpg@90q"
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">卡尔文·克莱</div>
 								</a>
@@ -2089,7 +1819,8 @@
 								<a href="//s.mianshui365.com/brand/276.html" target="_blank">
 									<div class="brand-img">
 										<img class="lazy"
-											data-original="//img.mianshui365.com/upload/20161020/21592449714.jpg@90q">
+											data-original="//img.mianshui365.com/upload/20161020/21592449714.jpg@90q"
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">丹尼尔·惠灵顿</div>
 								</a>
@@ -2098,7 +1829,8 @@
 								<a href="//s.mianshui365.com/brand/105.html" target="_blank">
 									<div class="brand-img">
 										<img class="lazy"
-											data-original="//img.mianshui365.com/upload/20161020/22343424943.jpg@90q">
+											data-original="//img.mianshui365.com/upload/20161020/22343424943.jpg@90q"
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">卡西欧</div>
 								</a>
@@ -2107,7 +1839,8 @@
 								<a href="//s.mianshui365.com/brand/88.html" target="_blank">
 									<div class="brand-img">
 										<img class="lazy"
-											data-original="//img.mianshui365.com/upload/20161020/22355862395.jpg@90q">
+											data-original="//img.mianshui365.com/upload/20161020/22355862395.jpg@90q"
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">克莱恩</div>
 								</a>
@@ -2116,7 +1849,8 @@
 								<a href="//s.mianshui365.com/brand/26.html" target="_blank">
 									<div class="brand-img">
 										<img class="lazy"
-											data-original="//img.mianshui365.com/upload/20161020/22590674385.jpg@90q">
+											data-original="//img.mianshui365.com/upload/20161020/22590674385.jpg@90q"
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">西铁城</div>
 								</a>
@@ -2142,35 +1876,28 @@
 			<div class="floor-con clear-fix">
 				<div class="floor-con-banner small-banner">
 					<div class="swiper-container">
-						<div class="swiper-wrapper"
-							style="width: 1920px; transform: translate3d(-480px, 0px, 0px); transition-duration: 1s;">
+						<div class="swiper-wrapper" style="width: 1920px;">
 							<div class="swiper-slide swiper-slide-duplicate" style="width: 480px; height: 479px;"><a
 									href="https://s.mianshui365.com/list.html?source=4&amp;keyword=%E7%99%BB%E5%96%9C%E8%B7%AF"
-									target="_blank"><img class="lazy-swiper"
+									target="_blank"><img class="lazy"
 										data-original="//img.mianshui365.com/upload/43/61/37/436137a446fdc1cec71bf7abc37009cd.png"
-										alt=""></a></div>
+										alt="" style="width: 480px; height: 479px;"></a></div>
 							<div class="swiper-slide" style="width: 480px; height: 479px;"><a
 									href="https://s.mianshui365.com/list.html?source=4&amp;keyword=%E8%BF%88%E5%85%8B%E9%AB%98%E4%BB%95"
-									target="_blank"><img class="lazy-swiper"
+									target="_blank"><img class="lazy"
 										data-original="//img.mianshui365.com/upload/f0/b3/58/f0b358e09f99e0ea01af9d282c5d6c52.png"
-										alt=""
-										src="//img.mianshui365.com/upload/f0/b3/58/f0b358e09f99e0ea01af9d282c5d6c52.png"
-										style="display: inline;"></a></div>
+										alt="" style="display: inline-block;width: 480px; height: 479px;"></a></div>
 							<div class="swiper-slide" style="width: 480px; height: 479px;"><a
 									href="https://s.mianshui365.com/list.html?source=4&amp;keyword=%E7%99%BB%E5%96%9C%E8%B7%AF"
-									target="_blank"><img class="lazy-swiper"
+									target="_blank"><img class="lazy"
 										data-original="//img.mianshui365.com/upload/43/61/37/436137a446fdc1cec71bf7abc37009cd.png"
-										alt=""
-										src="//img.mianshui365.com/upload/43/61/37/436137a446fdc1cec71bf7abc37009cd.png"
-										style="display: inline;"></a></div>
+										alt="" style="display: inline-block;width: 480px; height: 479px;"></a></div>
 							<div class="swiper-slide swiper-slide-duplicate swiper-slide-visible swiper-slide-active"
 								style="width: 480px; height: 479px;"><a
 									href="https://s.mianshui365.com/list.html?source=4&amp;keyword=%E8%BF%88%E5%85%8B%E9%AB%98%E4%BB%95"
-									target="_blank"><img class="lazy-swiper"
+									target="_blank"><img class="lazy"
 										data-original="//img.mianshui365.com/upload/f0/b3/58/f0b358e09f99e0ea01af9d282c5d6c52.png"
-										alt=""
-										src="//img.mianshui365.com/upload/f0/b3/58/f0b358e09f99e0ea01af9d282c5d6c52.png"
-										style="display: inline;"></a></div>
+										alt="" style="display: inline-block;width: 480px; height: 479px;"></a></div>
 						</div>
 						<div class="pagination pagination3" paginationind="3"><span
 								class="swiper-pagination-switch swiper-visible-switch swiper-active-switch"></span><span
@@ -2186,8 +1913,7 @@
 							<div class="img">
 								<img class="lazy"
 									data-original="//img.mianshui365.com/upload/69/de/ac/69deac405c73bc5f310ec0367f8eef6d.JPG@200h_200w_90q_1wh"
-									src="//img.mianshui365.com/upload/69/de/ac/69deac405c73bc5f310ec0367f8eef6d.JPG@200h_200w_90q_1wh"
-									style="display: block;">
+									style="display: block;width:160px;height:160px">
 								<img class="saleout-icon"
 									src="//snewww.mianshui365.com/assets/images/goods_saleout.png?v=1">
 							</div>
@@ -2206,8 +1932,7 @@
 							<div class="img">
 								<img class="lazy"
 									data-original="//img.mianshui365.com/upload/de/b8/9f/deb89fb371821868792aa19d108f2584.JPG@200h_200w_90q_1wh"
-									src="//img.mianshui365.com/upload/de/b8/9f/deb89fb371821868792aa19d108f2584.JPG@200h_200w_90q_1wh"
-									style="display: block;">
+									style="display: block;width:160px;height:160px">
 							</div>
 							<div class="info">
 								<p class="pd-brand text-overflow">迈克高仕</p>
@@ -2224,8 +1949,7 @@
 							<div class="img">
 								<img class="lazy"
 									data-original="//img.mianshui365.com/upload/20150209/17443689052.jpg@200h_200w_90q_1wh"
-									src="//img.mianshui365.com/upload/20150209/17443689052.jpg@200h_200w_90q_1wh"
-									style="display: block;">
+									style="display: block;width:160px;height:160px">
 							</div>
 							<div class="info">
 								<p class="pd-brand text-overflow">新秀丽</p>
@@ -2241,8 +1965,7 @@
 							<div class="img">
 								<img class="lazy"
 									data-original="//img.mianshui365.com/upload/0a/c7/50/0ac75011acd43a89982edfbed3ed5646.jpg@200h_200w_90q_1wh"
-									src="//img.mianshui365.com/upload/0a/c7/50/0ac75011acd43a89982edfbed3ed5646.jpg@200h_200w_90q_1wh"
-									style="display: block;">
+									style="display: block;width:160px;height:160px">
 							</div>
 							<div class="info">
 								<p class="pd-brand text-overflow">里莫瓦</p>
@@ -2267,7 +1990,7 @@
 									<div class="brand-img">
 										<img class="lazy"
 											data-original="//img.mianshui365.com/upload/20161020/22090436404.jpg@90q"
-											src="//img.mianshui365.com/upload/20161020/22593348935.jpg@90q">
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">巴莉</div>
 								</a>
@@ -2277,7 +2000,7 @@
 									<div class="brand-img">
 										<img class="lazy"
 											data-original="//img.mianshui365.com/upload/20161020/22592689506.jpg@90q"
-											src="//img.mianshui365.com/upload/20161020/22593348935.jpg@90q">
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">新秀丽</div>
 								</a>
@@ -2287,7 +2010,7 @@
 									<div class="brand-img">
 										<img class="lazy"
 											data-original="//img.mianshui365.com/upload/20161129/17484864262.jpg@90q"
-											src="//img.mianshui365.com/upload/20161020/22593348935.jpg@90q">
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">Coccinelle</div>
 								</a>
@@ -2297,7 +2020,7 @@
 									<div class="brand-img">
 										<img class="lazy"
 											data-original="//img.mianshui365.com/upload/20161020/22173384818.jpg@90q"
-											src="//img.mianshui365.com/upload/20161020/22593348935.jpg@90q">
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">登喜路</div>
 								</a>
@@ -2307,7 +2030,7 @@
 									<div class="brand-img">
 										<img class="lazy"
 											data-original="//img.mianshui365.com/upload/20161020/22204134746.jpg@90q"
-											src="//img.mianshui365.com/upload/20161020/22593348935.jpg@90q">
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">范思哲</div>
 								</a>
@@ -2317,7 +2040,7 @@
 									<div class="brand-img">
 										<img class="lazy"
 											data-original="//img.mianshui365.com/upload/20161020/22235637975.jpg@90q"
-											src="//img.mianshui365.com/upload/20161020/22593348935.jpg@90q">
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">盖尔斯</div>
 								</a>
@@ -2328,7 +2051,8 @@
 								<a href="//s.mianshui365.com/brand/4.html" target="_blank">
 									<div class="brand-img">
 										<img class="lazy"
-											data-original="//img.mianshui365.com/upload/20161020/22363020366.jpg@90q">
+											data-original="//img.mianshui365.com/upload/20161020/22363020366.jpg@90q"
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">蔻驰</div>
 								</a>
@@ -2337,7 +2061,8 @@
 								<a href="//s.mianshui365.com/brand/241.html" target="_blank">
 									<div class="brand-img">
 										<img class="lazy"
-											data-original="//img.mianshui365.com/upload/20161020/22400852624.jpg@90q">
+											data-original="//img.mianshui365.com/upload/20161020/22400852624.jpg@90q"
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">里莫瓦</div>
 								</a>
@@ -2346,7 +2071,8 @@
 								<a href="//s.mianshui365.com/brand/75.html" target="_blank">
 									<div class="brand-img">
 										<img class="lazy"
-											data-original="//img.mianshui365.com/upload/20161020/22402175042.jpg@90q">
+											data-original="//img.mianshui365.com/upload/20161020/22402175042.jpg@90q"
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">力士保</div>
 								</a>
@@ -2355,7 +2081,8 @@
 								<a href="//s.mianshui365.com/brand/77.html" target="_blank">
 									<div class="brand-img">
 										<img class="lazy"
-											data-original="//img.mianshui365.com/upload/20161020/22574979370.jpg@90q">
+											data-original="//img.mianshui365.com/upload/20161020/22574979370.jpg@90q"
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">途明</div>
 								</a>
@@ -2364,7 +2091,8 @@
 								<a href="//s.mianshui365.com/brand/102.html" target="_blank">
 									<div class="brand-img">
 										<img class="lazy"
-											data-original="//img.mianshui365.com/upload/20161020/22581037268.jpg@90q">
+											data-original="//img.mianshui365.com/upload/20161020/22581037268.jpg@90q"
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">万宝龙</div>
 								</a>
@@ -2373,7 +2101,8 @@
 								<a href="//s.mianshui365.com/brand/71.html" target="_blank">
 									<div class="brand-img">
 										<img class="lazy"
-											data-original="//img.mianshui365.com/upload/20161020/22273255766.jpg@90q">
+											data-original="//img.mianshui365.com/upload/20161020/22273255766.jpg@90q"
+											style="width:100px;height:30px">
 									</div>
 									<div class="desc text-overflow">化石</div>
 								</a>
@@ -2400,44 +2129,33 @@
 			<div class="floor-con clear-fix">
 				<div class="floor-con-banner small-banner">
 					<div class="swiper-container">
-						<div class="swiper-wrapper"
-							style="width: 2400px; height: 479px;transform: translate3d(-480px, 0px, 0px); transition-duration: 1s;">
+						<div class="swiper-wrapper" style="width: 2400px; height: 479px;">
 							<div class="swiper-slide swiper-slide-duplicate" style="width: 480px; height: 479px;"><a
 									href="https://s.mianshui365.com/list.html?source=3&amp;keyword=CELINE"
-									target="_blank"><img class="lazy-swiper"
+									target="_blank"><img class="lazy"
 										data-original="//img.mianshui365.com/upload/ee/82/2d/ee822dd794c3149f34bdd6092f45ee28.png"
-										alt=""
-										src="//img.mianshui365.com/upload/ee/82/2d/ee822dd794c3149f34bdd6092f45ee28.png"
-										style="display: inline;"></a></div>
+										alt="" style="display: inline-block;width: 480px; height: 479px;"></a></div>
 							<div class="swiper-slide" style="width: 480px; height: 479px;"><a
 									href="https://s.mianshui365.com/list.html?source=0&amp;keyword=%E9%9B%B7%E6%9C%8B"
-									target="_blank"><img class="lazy-swiper"
+									target="_blank"><img class="lazy"
 										data-original="//img.mianshui365.com/upload/12/33/e9/1233e954d9ffca66dfcbbe9d3b13229e.png"
-										alt=""
-										src="//img.mianshui365.com/upload/12/33/e9/1233e954d9ffca66dfcbbe9d3b13229e.png"
-										style="display: inline;"></a></div>
+										alt="" style="display: inline-block;width: 480px; height: 479px;"></a></div>
 							<div class="swiper-slide" style="width: 480px; height: 479px;"><a
-									href="https://s.mianshui365.com/brand/5.html" target="_blank"><img
-										class="lazy-swiper"
+									href="https://s.mianshui365.com/brand/5.html" target="_blank"><img class="lazy"
 										data-original="//img.mianshui365.com/upload/1d/1b/e4/1d1be4328256dd9cc39990655baaec86.jpg"
-										alt=""
-										src="//img.mianshui365.com/upload/1d/1b/e4/1d1be4328256dd9cc39990655baaec86.jpg"
-										style="display: inline;"></a></div>
+										alt="" style="display: inline-block;width: 480px; height: 479px;"></a></div>
 							<div class="swiper-slide swiper-slide-visible swiper-slide-active"
 								style="width: 480px; height: 479px;"><a
 									href="https://s.mianshui365.com/list.html?source=3&amp;keyword=CELINE"
-									target="_blank"><img class="lazy-swiper"
+									target="_blank"><img class="lazy"
 										data-original="//img.mianshui365.com/upload/ee/82/2d/ee822dd794c3149f34bdd6092f45ee28.png"
-										alt=""
-										src="//img.mianshui365.com/upload/ee/82/2d/ee822dd794c3149f34bdd6092f45ee28.png"
-										style="display: inline;"></a></div>
-							<div class="swiper-slide swiper-slide-duplicate" style="width: 480px; height: 479px;"><a
+										alt="" style="display: inline-block;width: 480px; height: 479px;"></a></div>
+							<div class="swiper-slide" style="width: 480px; height: 479px;"><a
 									href="https://s.mianshui365.com/list.html?source=0&amp;keyword=%E9%9B%B7%E6%9C%8B"
-									target="_blank"><img class="lazy-swiper"
+									target="_blank"><img class="lazy"
 										data-original="//img.mianshui365.com/upload/12/33/e9/1233e954d9ffca66dfcbbe9d3b13229e.png"
-										alt=""
 										src="//img.mianshui365.com/upload/12/33/e9/1233e954d9ffca66dfcbbe9d3b13229e.png"
-										style="display: inline;"></a></div>
+										alt="" style="display: inline-block;width: 480px; height: 479px;"></a></div>
 						</div>
 						<div class="pagination pagination4" paginationind="4"><span
 								class="swiper-pagination-switch swiper-visible-switch swiper-active-switch"></span><span
@@ -3695,6 +3413,7 @@
 	</div>
 	<script src="script/thirdplugins/jquery.min.js"></script>
 	<script src="script/thirdplugins/jquery.cookie.js"></script>
+	<script src="script/thirdplugins/jquery.lazyload.js"></script>
 	<script src="script/js/piclist.js"></script>
 	<script src="script/js/index.js"></script>
 </body>
