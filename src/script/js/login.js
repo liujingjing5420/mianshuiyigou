@@ -15,13 +15,11 @@
             }).done(function (data) {
                 if (data) {
                     $.cookie('username', $username.val(), { expires: 7 });
-                    location.href = 'http://10.31.158.39:8088/javascript/mianshuiyigou/src/index111.html';
+                    location.href = 'index111.html';
                 } else {
                     alert('请输入正确的用户名和密码');
                 }
             });
         }
     })
-
-
 }(jQuery);

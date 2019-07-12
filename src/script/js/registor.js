@@ -115,7 +115,7 @@
                 }
             });
             // 跳转至登录页面
-            location.href = 'http://10.31.158.39:8088/javascript/mianshuiyigou/src/login.html';
+            location.href = 'login.html';
         }
     })
 
