@@ -5,6 +5,10 @@
     const $sms = $('.smsinput');
     const yzmimg = $('.sms span');
     const $btn = $('.btn');
+    let username = true;
+    let pass = true;
+    let confirm = true;
+    let sms = true;
     // 生成验证码
     function createyzm() {
         let arr = [];
@@ -42,24 +46,8 @@
     yzmimg.on('click', function () {
         yzmimg.html(createyzm());
     })
+
     //表单验证
-    // 用户名验证
-    $username.on('blur', function () {
-        if ($username.val() !== '') {
-            let reg = /^[\u4e00-\u9fa5]+|[a-zA-Z]+|[a-zA-Z]+[\u4e00-\u9fa5]+$/g;
-            let str = $username.val();
-            if (reg.test(str)) {
-                $('.user-icon').html('√');
-                username = true;
-            } else {
-                $('.user-icon').html('×');
-                username = false;
-            }
-        } else {
-            $('.user-icon').html('×');
-            username = false;
-        }
-    })
     // 密码验证
     $pass.on('blur', function () {
         if ($pass.val() !== '') {
@@ -131,7 +119,6 @@
         }
     })
 
-
     // 用户名框失去焦点的时候验证数据库中是否存在相同的用户名
     $username.on('blur', function () {
         if ($username.val() !== '') {
@@ -142,11 +129,32 @@
                 }
             }).done(function (data) {
                 if (data) {
-                    alert('您输入的用户名已经存在');
+                    $('.err-tip').css('display', 'block');
+                    $('.err-tip').html('<em class="err"></em>您输入的用户名已经存在');
                     username = false;
                     $('.user-icon').html('×');
+                    return false;
+                } else {
+                    $('.err-tip').css('display', 'none');
+                    $('.err-tip').html('<em class="err"></em>');
+                }
+                // 用户名验证 是否符合表单验证的规则
+                if ($username.val() !== '') {
+                    let reg = /^[\u4e00-\u9fa5]+|[a-zA-Z]+|[a-zA-Z]+[\u4e00-\u9fa5]+$/g;
+                    let str = $username.val();
+                    if (reg.test(str)) {
+                        $('.user-icon').html('√');
+                        username = true;
+                    } else {
+                        $('.user-icon').html('×');
+                        username = false;
+                    }
+                } else {
+                    $('.user-icon').html('×');
+                    username = false;
                 }
             });
         }
     })
+
 }(jQuery);

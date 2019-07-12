@@ -19,7 +19,7 @@
         $(".nav").load("index111.html .f-home-nav");
     }(jQuery)
     // 详情页渲染相应的商品
-    picid = location.search.slice(1).split('=')[1];
+    let picid = location.search.slice(1).split('=')[1];
     const $smallpic = $('.large-box img');
     const $bigpic = $('.zoom-box img');
     $.ajax({
@@ -29,9 +29,10 @@
             id: picid
         }
     }).done(function (data) {
-        $smallpic.attr('src', data.url);
+        console.log(data);
+        $smallpic.attr('src', data.fdjimg);
         // $bigpic.css('background-image', 'url(' + data.url + ')');
-        $bigpic.attr('src', data.url);
+        $bigpic.attr('src', data.fdjimg);
         $bigpic.css({
             width: 800,
             height: 800
